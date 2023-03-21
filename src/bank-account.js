@@ -17,7 +17,7 @@ export class BankAccount {
   }
 
   deposit(amount) {
-    this.balances=amount;
+    this.balances+=amount;
   }
 
   withdraw() {
