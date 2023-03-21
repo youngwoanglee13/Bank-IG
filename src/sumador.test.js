@@ -7,7 +7,7 @@ describe("Bank Account", () => {
     expect(account.balance).toEqual(0);
   });
 
-  xit("can deposit money", () => {
+  it("can deposit money", () => {
     const account = new BankAccount();
     account.open();
     account.deposit(100);
