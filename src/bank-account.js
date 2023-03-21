@@ -32,7 +32,7 @@ export class BankAccount {
   }
 
   withdraw(amount) {
-    if(this.opened==false){
+    if(this.opened==false || amount>this.balances){
       throw new ValueError();
     }
     this.balances-=amount;  }
