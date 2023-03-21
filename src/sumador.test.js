@@ -64,8 +64,9 @@ describe("Bank Account", () => {
     }).toThrow(ValueError);
   });
 
-  xit("close already closed account throws error", () => {
+  it("close already closed account throws error", () => {
     const account = new BankAccount();
+    account.close();
     expect(() => {
       account.close();
     }).toThrow(ValueError);

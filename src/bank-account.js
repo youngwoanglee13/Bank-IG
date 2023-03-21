@@ -14,6 +14,9 @@ export class BankAccount {
   }
 
   close() {
+    if(this.opened==false){
+      throw new ValueError();
+    }
     this.opened=false;
   }
 
