@@ -25,6 +25,9 @@ export class BankAccount {
   }
 
   withdraw(amount) {
+    if(this.opened==false){
+      throw new ValueError();
+    }
     this.balances-=amount;  }
 
   get balance() {

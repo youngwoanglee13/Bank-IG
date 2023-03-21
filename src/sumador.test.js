@@ -55,7 +55,7 @@ describe("Bank Account", () => {
     }).toThrow(ValueError);
   });
 
-  xit("withdraw from closed account throws error", () => {
+  it("withdraw from closed account throws error", () => {
     const account = new BankAccount();
     account.open();
     account.close();
