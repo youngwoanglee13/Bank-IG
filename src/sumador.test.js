@@ -72,7 +72,7 @@ describe("Bank Account", () => {
     }).toThrow(ValueError);
   });
 
-  xit("open already opened account throws error", () => {
+  it("open already opened account throws error", () => {
     const account = new BankAccount();
     account.open();
     expect(() => {

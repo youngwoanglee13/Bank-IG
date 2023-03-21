@@ -10,7 +10,10 @@ export class BankAccount {
   }
 
   open() {
-  
+    if(this.opened==true){
+      throw new ValueError();
+    }
+    this.opened=true;
   }
 
   close() {
