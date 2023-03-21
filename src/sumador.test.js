@@ -30,13 +30,13 @@ describe("Bank Account", () => {
     expect(account.balance).toEqual(50);
   });
 
-  xit("can withdraw money sequentially", () => {
+  it("can withdraw money sequentially", () => {
     const account = new BankAccount();
     account.open();
     account.deposit(100);
     account.withdraw(20);
-    account.withdraw(80);
-    expect(account.balance).toEqual(0);
+    account.withdraw(60);
+    expect(account.balance).toEqual(20);
   });
 
   xit("checking balance of closed account throws error", () => {

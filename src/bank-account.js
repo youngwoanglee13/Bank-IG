@@ -20,8 +20,8 @@ export class BankAccount {
     this.balances+=amount;
   }
 
-  withdraw() {
-    this.balances-=50;  }
+  withdraw(amount) {
+    this.balances-=amount;  }
 
   get balance() {
     return this.balances;
