@@ -98,7 +98,7 @@ describe("Bank Account", () => {
     }).toThrow(ValueError);
   });
 
-  xit("cannot withdraw negative amount", () => {
+  it("cannot withdraw negative amount", () => {
     const account = new BankAccount();
     account.open();
     account.deposit(100);
